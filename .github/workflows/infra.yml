@@ -76,6 +76,10 @@ jobs:
         tokenSuffix: '__'
         # 
         files: '["**/*.tf","**/*.tfvars"]'
+    
+    - name: file contents
+      working-directory: infra
+      run: cat main.tf
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
