@@ -76,6 +76,13 @@ jobs:
         tokenSuffix: '__'
         # 
         files: '["**/*.tf","**/*.tfvars"]'
+        #
+      env:
+        backendresourcegroup: 'toto'
+        backendstorageaccount: 'titi'
+        application: 'tutu'
+        resourcegroup: 'tata'
+        location: 'tyty'
     
     - name: file contents
       working-directory: infra
