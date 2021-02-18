@@ -54,6 +54,7 @@ jobs:
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
+    environment: dev-env
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
@@ -78,7 +79,6 @@ jobs:
         files: '["**/*.tf","**/*.tfvars"]'
         #
       env:
-        backendresourcegroup: 'toto'
         backendstorageaccount: 'titi'
         application: 'tutu'
         resourcegroup: 'tata'
