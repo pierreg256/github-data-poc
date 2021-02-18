@@ -65,7 +65,12 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
-      
+
+    - name: Login via Az module
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS}}
+
     - name: Replace tokens
       # You may pin to the exact commit or the version.
       # uses: cschleiden/replace-tokens@121d9153eda2951d490e9f724a67ff095ab4c4f7
