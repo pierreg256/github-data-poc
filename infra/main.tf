@@ -14,7 +14,7 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "__BACKENRESOURCEGROUP__"
+    resource_group_name  = "__BACKENDRESOURCEGROUP__"
     storage_account_name = "__backendstorageaccount__"
     container_name       = "__application__"
     key                  = "__application__.terraform.tfstate"
