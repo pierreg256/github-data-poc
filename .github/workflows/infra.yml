@@ -78,11 +78,6 @@ jobs:
         # 
         files: '["**/*.tf","**/*.tfvars"]'
         #
-      env:
-        backendstorageaccount: 'titi'
-        application: 'tutu'
-        resourcegroup: 'tata'
-        location: 'tyty'
     
     - name: file contents
       working-directory: infra
